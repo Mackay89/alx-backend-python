@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-This module is a basic annotations - add
+This module contains a single function concat that concatenates two
+strings and returns the result.
 """
 
 
 def concat(str1: str, str2: str) -> str:
     """
-    Concatenates two strings return the result.
+    Concatenates two strings returns the result.
 
 
     Args:

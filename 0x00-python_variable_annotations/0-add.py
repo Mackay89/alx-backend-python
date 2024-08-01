@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module 0-add Contains a single function add that adds two floats and returns the result.
+This module coontains a single function add that adds two floats and returns the result.
 """
 
 
