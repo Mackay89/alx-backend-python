@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This module is a basic annottations - add
+This module is a basic annotations - add
 """
 
 

@@ -3,10 +3,12 @@
 This is a basic annotations - add
 """
 
+import math
+
 
 def floor(n: float) -> int:
     """
-    Return the floor of a float.
+    Returns the floor of a float.
 
 
     Args:
