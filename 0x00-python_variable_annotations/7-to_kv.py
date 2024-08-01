@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-This module contains a single function to_kv that returns a tuple containing a
-string and the square of an int or float.
+Complex types - string and int/float to tuple
 """
 
 
