@@ -4,13 +4,23 @@
 """
 
 
-from typing import Tuple, List, Any
+from typing import Union, Any, Mapping, Tuple, List
 
 
-def zoom_array(lst: Tuple[Any, ...], factor: int = 2) -> List[Any]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
-    zoom array
+    Zoom in on the elements of the input tuple by the given factor.
+
+
+    Args:
+        lst (Tuple): The input tuple.
+        factor (int, optional): The zoom factor. Defaults to 2.
+
+
+    Returns:
+        List[Any]: The zoomed-in list
     """
+
     zoomed_in: List[Any] = [
         item for item in lst
         for i in range(factor)
