@@ -28,7 +28,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """Test that access_nested_map raises KeyError for missing keys"""
         with self.assertRaises(KeyError) as err:
             access_nested_map(nested_map, path)
-        self.assertEqual(str(err.exception), f"'{expected}'")
+        self.assertEqual(str(err.exception), expected)
 
 
 class TestGetJson(unittest.TestCase):
@@ -51,6 +51,7 @@ class TestMemoize(unittest.TestCase):
 
     def test_memoize(self):
         """Test that memoize caches the result of a method"""
+        
         class TestClass:
             """A test class to apply memoize decorator"""
 
@@ -61,9 +62,7 @@ class TestMemoize(unittest.TestCase):
             def a_property(self):
                 return self.a_method()
 
-        with patch.object(
-            TestClass, 'a_method', return_value=42
-        ) as mock_method:
+        with patch.object(TestClass, 'a_method', return_value=42) as mock_method:
             test_class = TestClass()
             test_class.a_property()
             test_class.a_property()
@@ -72,3 +71,4 @@ class TestMemoize(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
